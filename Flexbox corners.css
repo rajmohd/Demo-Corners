@@ -1,0 +1,87 @@
+/**
+ * Base styles to get us started...
+ */
+
+.container {
+  background-color: bisque;
+  box-sizing: border-box;
+  text-align: center;
+}
+.item {
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  height: 100px;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+
+/**
+ * Let's flexbox this!
+ */
+
+.container {
+  height:500px;
+  width: 500px;
+  justify-content:space-between;
+  }
+
+.item{
+  border-radius: 50%;
+  
+}
+#upper_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#upper_right {
+	position: absolute;
+	top: 0;
+	right: 0%;
+}
+#lower_left {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+}
+#lower_right {
+	bottom: 0%;
+	right: 0%;
+	position: absolute;
+}
+span{
+  display:block;
+  width:100px;
+  height:100px;
+}
+
+.item:nth-child(3){
+  align-self:flex-end;
+}
+
+.item:last-child{
+  align-self:flex-end;
+}
+
+.item:first-child span {
+    background-color: Crimson;
+}
+
+.item:nth-child(2) span{
+    background-color:RoyalBlue;
+}
+
+.item:nth-child(3) span{
+    background-color: DarkCyan;
+}
+
+.item:last-child span {
+    background-color: Chocolate;
+}
+
+.item:nth-child(2) span,
+.item:last-child span{
+    align-self:flex-end;
+}
